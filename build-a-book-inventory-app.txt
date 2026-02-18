@@ -1,0 +1,253 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+</head>
+
+<body>
+
+
+<h1>Book Inventory</h1>
+
+
+  <div class="table-container">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+      </thead>
+
+      <tbody>
+        <tr class="read">
+          <td class="title">American Gods</td>
+          <td>Neil Gaiman</td>
+          <td>High Fantasy - Horror - Fiction</td>
+          <td><span class="status">Read</span></td>
+          <td>
+            <span class="rate one">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </td>
+        </tr>
+
+        <tr class="in-progress">
+          <td class="title">The Way of Kings</td>
+          <td>Brandon Sanderson</td>
+          <td>High Fantasy - Fiction</td>
+          <td><span class="status">In Progress</span></td>
+          <td>
+            <span class="rate">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </td>
+        </tr>
+
+        <tr class="to-read">
+          <td class="title">Finding Somewhere to Belong</td>
+          <td>C.C. Masters</td>
+          <td>Paranormal Romance</td>
+          <td><span class="status">To Read</span></td>
+          <td>
+            <span class="rate">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </td>
+        </tr>
+
+        <tr class="read">
+          <td class="title">The God of the Woods</td>
+          <td>Liz Moore</td>
+          <td>Mystery - Thriller</td>
+          <td><span class="status">Read</span></td>
+          <td>
+            <span class="rate two">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </td>
+        </tr>
+
+        <tr class="read">
+          <td class="title">Fahrenheit 451</td>
+          <td>Ray Bradbury</td>
+          <td>Dystopia - Fiction - Classic Literature</td>
+          <td><span class="status">Read</span></td>
+          <td>
+            <span class="rate three">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </td>
+        </tr>
+
+        <tr class="to-read">
+          <td class="title">Neverwhere</td>
+          <td>Neil Gaiman</td>
+          <td>Science Fiction - Horror - Fantasy</td>
+          <td><span class="status">To Read</span></td>
+          <td>
+            <span class="rate">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </td>
+        </tr>
+
+      </tbody>
+
+  </table>
+  </div>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+    font-family: Arial, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: lightgray;
+}
+
+h1 {
+  background-image: linear-gradient(gray, lightblue, gray);
+  width: 400px;
+  border: 5px solid gray;
+border-radius: 10px;
+padding: 5px;
+margin-left: 300px;
+font-size: 2.5rem;
+}
+
+thead th {
+  background-image: linear-gradient(lightgray, rgb(126, 207, 235), lightgray);
+  border: 2px solid gray;
+  font-size: 1.5rem;
+}
+
+.table-container {
+  border: 7px solid gray;
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; 
+  font-size: 0.85rem;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #555
+}
+
+.title {
+  font-weight: bold;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(gray 0%, lightgray 15%, lightgreen 60%, lightgray 85%, gray 100%);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(gray 0%, lightgray 15%, pink 60%, lightgray 85%, gray 100%);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(gray 0%, lightgray 15%, rgb(240, 200, 128) 60%, lightgray 85%, gray 100%);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid red;
+  background-image: linear-gradient(red,pink, lightgray, pink , red);
+  padding: 5px;
+  margin: 3px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 3px solid green;
+  background-image: linear-gradient(green, lightgreen, lightgray, lightgreen, green);
+  padding: 5px;
+  margin: 3px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 3px solid orange;
+  background-image: linear-gradient(orange, rgb(240, 200, 128),lightgray, rgb(240, 200, 128), orange);
+  padding: 5px;
+  margin: 3px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+
+span[class="status"], span[class^="rate"] {
+  height: 25px;
+  width: auto;
+  padding: 3px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 2px;
+  height: 20px;
+  width: 20px;
+  background-color: gray;
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(yellow, gold, yellow);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(yellow, gold, yellow);
+}
+
+span[class~="three"] > span {
+    background-image: linear-gradient(yellow, gold, yellow);
+}
+
+** end of styles.css **
+

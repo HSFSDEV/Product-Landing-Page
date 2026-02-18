@@ -1,0 +1,146 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pricing Plans Layout Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Pricing Plans</h1>
+    <div class="pricing-container">
+      <div class="pricing-card basic-plan">
+        <h2>Basic</h2>
+        <p class="price">$9/month</p>
+        <div><p><span class="check">✓</span> Access to our core features</p>
+<p><span class="check">✓</span> Email support</p>
+<p><span class="x">✗</span> Advanced analytics</p>
+<p><span class="x">✗</span> Custom integrations</p>
+<p><span class="x">✗</span> Priority support</p></div>
+    <button class="btn">Choose Plan</button>
+      </div>
+      <div class="pricing-card pro-plan">
+        <h2>Pro</h2>
+        <p class="price">$19/month</p>
+        <div><p><span class="check">✓</span> Access to our core features</p>
+<p><span class="check">✓</span> Email support</p>
+<p><span class="check">✓</span> Advanced analytics</p>
+<p><span class="check">✓</span> Custom integrations</p>
+<p><span class="x">✗</span> Priority support</p></div>
+    <button class="btn">Choose Plan</button>
+      </div>
+      <div class="pricing-card premium-plan">
+        <h2>Premium</h2>
+        <p class="price">$29/month</p>
+        <div><p><span class="check">✓</span> Access to our core features</p>
+<p><span class="check">✓</span> Email support</p>
+<p><span class="check">✓</span> Advanced analytics</p>
+<p><span class="check">✓</span> Custom integrations</p>
+<p><span class="check">✓</span> Priority support</p></div>
+  <button class="btn">Choose Plan</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px yellow;
+  font-weight: bold;
+}
+
+.pricing-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 40px;
+  padding:10px;
+  width: 650px;
+  max-width: 1000px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.pricing-card {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px midnightblue;
+  padding: 10px;
+}
+
+.pricing-card:hover {
+  transform: translate(-2px, -2px);
+}
+
+.basic-plan {
+  display: block;
+  order: 0;
+  background-color: lightgray;
+  margin: 25px;
+}
+
+.pro-plan {
+  display: block;
+  order: 1;
+  flex-grow: 2;
+  background-color: lightblue;
+  margin: 25px;
+}
+
+.premium-plan {
+  display: block;
+  order: 2;
+  background-color: gold;
+  margin: 25px;
+}
+
+button {
+  font-size: 1.1rem;
+  margin: 20px;
+  padding:10px;
+  background-color: midnightblue;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translate(3px, 3px)
+}
+
+.check {
+  color: green;
+  font-weight: bold;
+}
+
+.x {
+  color: darkred;
+  font-weight: bold;
+}
+
+.price {
+  text-decoration: underline;
+}
+
+** end of styles.css **
+

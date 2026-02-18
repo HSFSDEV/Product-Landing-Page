@@ -1,0 +1,61 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+  <h1 id="title">HOBBY HOP- Rate Your Experience</h1>
+  <p id="description">Thank you for choosing Hobby Hop! Please rate your experience with us. <em>Your feedback is always used to improve future visits.</em></p>
+<form id="survey-form">
+<label id="name-label" for="name" name="name">Name:</label>
+<input type="text" 
+        id="name" 
+        name="name"
+        placeholder="Full Name"
+        required></input>
+<label id="email-label" for="email" name="email">Email:</label>
+<input type="email" 
+        name="email" 
+        id="email"
+        placeholder="email@email.com"
+        required></input>
+<label id="number-label" for="number" name="number">Phone Number:</label>
+<input type="number"
+        id="number" 
+        name="number"
+        min="10"
+        max="15"
+        placeholder="555-555-5555"</input>
+<label for="select">Which hobby did you engage in the most during your most recent visit?</label>
+  <select id="dropdown">
+  <option selected>Chess Club</option>
+  <option>Board Games</option>
+  <option>Video Games</option>
+  <option>Book Club</option>
+  <option>Volleyball</option>
+  <option>I just like to mingle</option></select>
+  <label id="returning-yes" name="returning">Are you likely to visit again?</label>
+<input type="radio" id="returning-yes" name="returning" value="yes">Yes</input>
+<input type="radio" id="returning-no" name="returning" value="no">No</input>
+<label for"interest" name="interest" value="interest">What hobbies interest you the most? (Check all that apply)</label>
+<input type="checkbox" name="interest" value="chess-club">Chess Club</input>
+<input type="checkbox"name="interest" value="board-games">Board Games</input>
+<input type="checkbox"name="interest" value="video-games">Video Games</input>
+<input type="checkbox"name="interest" value="book-club">Book Club</input>
+<input type="checkbox"name="interest" value="volleyball">Volleyball</input>
+<input checked type="checkbox"name="interest" value="mingling">Mingling at the cafe</input>
+<input type="checkbox"name="interest" value="none">None</input>
+<label for="comments">Additional comments (Please recommend more hobbies if you don't see your favorite offered)</label>
+<textarea id="comments" name="comments" value="comments"></textarea>
+<button id="submit">Submit</button>
+
+</form>
+
+  </body>
+</html>
+
+** end of index.html **
+

@@ -1,0 +1,51 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+    <body>
+<main> 
+</head>
+  <h1>What is Front End Web Development?</h1>
+  <p>Front-end web development is the development of the graphical user interface of a website through the use of HTML, CSS, and JavaScript so users can view and interact with that website.</p>
+<section><h2>Is there a difference between front end and back end developers?</h2>
+<p> A Front-End Developer is someone who creates websites and web applications.
+
+The difference between Front-End and Back-End is that Front-End refers to how a web page looks, while back-end refers to how it works.
+
+You can think of Front-End as client-side and Back-End as server-side.
+
+The basic languages for Front-End Development are HTML, CSS, and JavaScript.</p>
+<iframe src="https://www.youtube.com/watch?v=DUvFLhTWOVI"
+       title="What is a front end developer?"
+       width="5"
+       height="5">
+</iframe>
+<section><h2>Front End Client Software</h2>
+<p> The basic languages of Front-End Development are:
+    HTML
+    CSS
+    JavaScript
+        </p>
+<iframe src="https://www.youtube.com/shorts/11KtC3Q6a3I"
+        title="Top 3 Skills to become a Front End Developer"
+        width="5"
+        height="5"></iframe>
+<section><h2>Popular Front-End Stacks</h2>
+<p>Popular Stacks:
+MEAN stack: JavaScript - MongoDB - Express - AngularJS - Node.js
+MERN stack: JavaScript - MongoDB - Express - React.js - Node.js
+MEVN stack: JavaScript - MongoDB - Express - Vue.js - Node.js</p>
+<iframe src="https://www.youtube.com/watch?v=OpW7E3yz5EY"
+        title="The Best Tech Stack for Web Developers"
+        width="5"
+        height="5"></iframe>
+</body>
+
+</html>
+
+** end of index.html **
+

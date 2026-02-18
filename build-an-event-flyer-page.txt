@@ -1,0 +1,54 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build an Event Flyer Page</title>
+</head>
+
+<body>
+  <header> 
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg">
+    <h1>Heather's 35th Birthday Party</h1>
+  </header>
+  <hr>
+  <main>
+    <section>
+      <h2>Time & Date</h2>
+      <p>October 23, 2025</p>
+      <p>7:00 PM</p>
+    </section>
+    <section>
+      <h2>Location</h2>
+      <p>Spotlight Karaoke</p>
+    </section>
+  <hr>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  padding: 50px;
+  margin: 0 auto;
+  width: 90vw;
+  min-height: calc(100vh - 100px)
+}
+
+hr {
+  width: 80%
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+** end of styles.css **
+

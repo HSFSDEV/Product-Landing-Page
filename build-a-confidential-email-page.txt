@@ -1,0 +1,77 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+
+</head>
+
+<body>
+<main id="email">
+  <div id="confidential">
+    CONFIDENTIAL</div>
+    <p>Attention all Agents:</p>
+    <p>We have an emergency. The secret formula for our <span class="blurred">Mega Marshmallow</span> has been compromised. This formula is what makes our marshmallows the fluffiest and most delicious.</p>
+    <p>We suspect that <span class="blurred">Professor Puff</span> is behind this. He has taken the formula to his hidden laboratory. Your mission is to infiltrate the lab and secure the formula before it's too late.</p>
+    <p class="end">Be sure to keep the <span class="blurred">Fluff'N'Stuff</span>lab's location confidential. Any leak of this information could jeopardize the entire operation.</p>
+    <div id="top-secret">
+TOP SECRET</div>
+</main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#email {
+  padding: 50px;
+  margin: 50px auto;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color: rgb(233, 213, 187)
+}
+
+
+#confidential {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 50px;
+  margin: 10px;
+  color:  red;
+  width: 240px;
+  margin: auto 75px;  
+  padding: 5px;
+  transform: rotate(-20deg);
+  border: 2px solid red;
+  text-align: center;
+}
+
+#top-secret {
+  display: inline-block;
+  font-size: 1.5rem;
+  color:  red;
+  width: 240px;
+  margin: auto 75px;  
+  padding: 5px;
+  transform: rotate(15deg);
+  border: 2px solid red;
+  text-align: center;
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+.end {
+  margin-bottom: 50px;
+}
+
+** end of styles.css **
+

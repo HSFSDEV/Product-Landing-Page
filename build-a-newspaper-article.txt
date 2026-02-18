@@ -1,0 +1,87 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Newspaper Article</title>
+  </head>
+  <body>
+    <div class="newspaper">
+      <div class="name">The Pear Juice</div>
+      <div class="date">November 11, 2025</div>
+      <div class="headline">Breaking: Flash Flooding Immanent</div>
+      <div class="sub-headline">Thursday to bring 20+ inches of rain in less than an hour</div>
+      <div class="author"> By Fudge Schooly</div>
+      <div class="text">Meteorologists have now confirmed Thursday's storm is going to be beyond intense. Those located in the southeast regions, central, and far south should be prepared for downpours, hail, lightning, tornadoes, and wind. Strangely enough, the experts have delcared a possibility of cats, dogs, and small marine animals to fall from the sky as well.</div>
+      <div class="text">Residents are directed to tarp ther lawns in order to catch the vile sky creatures so they can be made into our famous town jerky, when the storm has calmed. Hunker down til it's over, and reuse and recycle rainwater while the power is repaired. <i>Remember, you are on your own!</i></div>
+    </div>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+  font-size: 24px;
+}
+
+body {
+  background: brown;
+  max-width: 600px;
+}
+
+.newspaper {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background: lightgreen;
+  border: 3px dashed yellow;
+  border-radius: 7px;
+
+}
+
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.name, .author {
+  text-transform: uppercase;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+  color: maroon;
+}
+
+.name, .author, .headline, .date, .sub-headline {
+  text-align: center;
+}
+
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+}
+
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+** end of styles.css **
+

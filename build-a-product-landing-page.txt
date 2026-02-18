@@ -1,0 +1,312 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+
+  <header id="header">
+    
+    <img id="header-img" src="https://bold-azure-fhcphdiuh8.edgeone.app/transparent-logo.svg">
+    
+    
+    <nav id="nav-bar">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#video"
+      class="nav-link">How It Works</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#form"
+      class="nav-link">Contact Us</a>
+    </nav>
+    
+  </header>
+
+  <section id="about">
+    <h1>~ Welcome to WallFlower ~</h1>
+    <p>Flowers have always been a symbol of timeless love and happiness. Here at WallFlower, we strive to provide you with the best product to fit your needs. Whether you're looking for special flower framing, flower posters, or unique items, we've got you covered. Check out our DIY framing class below, or contact us for all of your custom flower needs. Never fear, flower power is here!</p>
+  </section>
+
+ 
+    <iframe 
+    id="video"
+    width="500" height="300" src="https://www.youtube.com/embed/J2fQNpCg_Mo?si=cCovP-goWQ-Beaun" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+
+  <section id="products">
+    <div class="posters">
+      <img class="product-image" src="https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg" width="200px" height="200px">
+      <h2>Posters</h2>
+      <p>Check out our original posters! We create images that satify all decorating needs. From natural daisies to modern, abstract doozies, our wide range of images and available sizes are sure to catch your eye.</p>
+    </div>
+    <div class="custom-flower-framing">
+      <img class="product-image" src="https://colossal-red-0y6tb8hkro.edgeone.app/pexels-nerosable-13847649.jpg" width="200px" height="200px">
+      <h2>Framing</h2>
+      <p>Have dried flowers that are special to you? Come see our extensive framing options for permanently preserving your favorite memories.</p>
+    </div>
+    <div class="preserved-flowers">
+      <img class="product-image" src="https://right-beige-lixmwdy1ll.edgeone.app/pexels-koolshooters-7346633.jpg" width="200px" height="200px">
+      <h2>Accessories</h2>
+      <p>From paperweights to globes- view our wide selection of preserved flowers.</p>
+    </div>
+  </section>
+
+  
+    <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+    <label for="message" id="contact-us">What's on your mind?</label>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Tell us how we can help..." required></textarea>
+    <label for="email" name="email" class="email">Email: </label>
+    <input 
+    type="email" 
+    id="email"  
+    name="email" placeholder="email@example.com"
+    required>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+:root {
+  --bg-main: rgb(233, 206, 179);
+  --text-main: linen;
+  --accent: rgb(40, 140, 206);
+}
+
+html {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "header"
+  "about"
+  "video"
+  "products"
+  "form";
+  gap:30px;
+  justify-items: center;
+}
+
+header {grid-area: header; }
+#about {grid-area: about; }
+#video {grid-area: video; }
+#products {grid-area: products; }
+#form {grid-area: form; }
+
+
+header {
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+   background-color: rgb(185, 158, 121);
+  border: 10px solid rgba(116, 100, 78, 0.75);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  justify-self: stretch;
+  max-height: 250px;
+}
+
+
+header a { 
+  display: flex; 
+margin-top: 0; 
+color: linen; 
+background-color: rgba(116, 100, 78, 0.75); 
+text-decoration: none; 
+font-weight: bold; 
+font-size: 20px; 
+padding: 2.5px 5px; 
+border-radius: 10px; 
+}
+
+
+h1, h2 {
+  font-size: 25px;
+  padding: 5px;
+  color: rgb(40, 140, 206);
+  font-family: 'Cooper Black', 'Georgia', serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(185, 158, 121);
+  border: 2px double rgba(116, 100, 78, 0.75);
+  border-radius: 5px;
+}
+
+#header-img {
+  height: auto;
+  max-height: 200px;
+  width: auto;
+  margin: -30px;
+}
+
+
+#nav-bar {
+  display: flex;
+  gap: 70px;
+  padding: 10px;
+  justify-content: center;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  transition: 0.15s ease;
+  color: rgb(40, 140, 206)
+}
+
+#about {
+  background-color: rgba(116, 100, 78, 0.75);
+  color: linen;
+  border: 5px solid rgba(116, 100, 78, 0.75);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#about p::first-letter {
+  initial-letter: 2 raise;
+  float: left;
+  margin-right: 1px;
+  padding: 3px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+}
+
+
+.posters, .custom-flower-framing, .preserved-flowers {
+ background-color: rgba(116, 100, 78, 0.75);
+  color: linen;
+  border: 5px solid rgba(116, 100, 78, 0.75);
+  border-radius: 15px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  font-size: 15px;
+}
+
+  .preserved-flowers:hover {
+    transform: translateY(-2px);
+  transition: 0.15s ease;
+  }
+
+  .posters:hover {
+   transform: translateY(-2px);
+  transition: 0.15s ease;
+  }
+
+  .custom-flower-framing:hover {
+    transform: translateY(-2px);
+  transition: 0.15s ease;
+  }
+
+form {
+   background-color: rgba(116, 100, 78, 0.75);
+  color: linen;
+  border: 5px solid rgba(116, 100, 78, 0.75);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  text-align: center;
+  align-items: center;
+  font-family: 'Cooper Black', 'Georgia', serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+textarea {
+  background-color: linen;
+  color: rgb(116, 100, 78);
+  height: 120px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+#email {
+   height: 40px;
+   width: 400px;
+   background-color: linen;
+  color: rgb(116, 100, 78);
+  font-size: 15px;
+}
+
+.product-image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+#submit {
+  background-color: rgb(185, 158, 121);
+  color: linen;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 200px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #header-img {
+    height: 60px;
+    bottom-margin: 5px;
+  }
+
+  #products {
+    grid-template-columns: 1fr;
+  }
+
+  #email {
+    width: 90%;
+  }
+}
+
+** end of styles.css **
+

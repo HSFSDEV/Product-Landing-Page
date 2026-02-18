@@ -1,0 +1,80 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stlyesheet" href="styles.css"
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form><h2>Contact Us</h2>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" required placeholder="Tell us how we can help you"/></textarea>
+        <button type="submit">Submit</button>
+            </form>
+        </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background: purple;
+  color: orange;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.form-container {
+  border-radius: 10px;
+  padding: 1em;
+  width: 40%;
+  min-width: 400px;
+  background-color: teal;
+}
+
+label {
+  margin: 5px;
+  color: orange;
+  font-size: 25px;
+}
+
+input {
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 30px
+}
+
+textarea {
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: purple;
+  color: black;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: rgb(74, 11, 74);
+}
+
+** end of styles.css **
+

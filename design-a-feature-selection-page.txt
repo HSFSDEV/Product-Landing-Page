@@ -1,0 +1,117 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="utf-8">
+    <title>Selection Feature Page</title>
+</head>
+
+<body>
+<h1>Feature Selection</h1>
+<div class="feature-card-container">
+    <label class="feature-card">
+        <input type="checkbox"><span>Bronze</span>
+    <p>50 GB Storage</p>
+    </label>
+    <label class="feature-card">
+        <input type="checkbox"><span>Silver</span>
+    <p>100 GB Storage + 24/7 customer support</p></label>
+    <label class="feature-card">
+        <input type="checkbox"><span>Gold</span>
+    <p> 250 GB Storage + 24/7 customer support + Lightning fast speeds!</p></label>
+    <label class="feature-card"><input type="checkbox"><span>Platnum</span>
+<p><span>1 TB Storage </span><span>+ 24/7 premium preferred customer support</span><span>+ Lightning fast speeds!</span><span>+ Unlimited Data</span></label>
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background: #2462a5;
+  height: 100vh;
+  width: 100vh;
+}
+
+.feature-card-container {
+  background: #fff;
+  border: 10px solid gold;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px; background-color: lightblue;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s,
+border-color 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
+h1 {
+  font-family: Lucida Console, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightblue;
+  text-shadow: 
+  -1px -1px 0 rgb(6, 74, 97),
+  1px -1px 0 rgb(6, 74, 97),
+  -1px 1px 0 rgb(6, 74, 97),
+  1px 1px 0 lightblue;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+background: rgba(128, 128, 126, 0.2);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked {
+  background: gold;
+  border: 3px solid gold;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+** end of styles.css **
+

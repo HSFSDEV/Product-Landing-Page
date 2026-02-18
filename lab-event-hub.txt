@@ -1,0 +1,49 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Event Hub</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <article><h3>Emerson, Lake, and Palmer</h3>
+            <p>Welcome back my friends to the show that never ends. I'm so glad you could attend...Come inside! Come inside!</p>
+                </article>
+            <article><h3>Ring of Roses</h3>
+            <p>Ring around the rosie, pocket full of posies, ashes, ashes, we all fall down.
+            </p>
+                </article>
+            </section>
+        <section id="past-events">
+            <h2>Past Events</h2>
+            <article><h3>Snowflake Party</h3>
+            <p>This event has passed.</p>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="Snowflake Party">
+                </article>
+            <article><h3>The Boob Tube Brew Dudes</h3>
+            <p>This event has passed.</p>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="The Boob Tube Brew Dudes">
+                </article>
+            </section>
+    <main>
+</body>
+
+</html>
+
+** end of index.html **
+
