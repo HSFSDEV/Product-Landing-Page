@@ -139,9 +139,15 @@ padding: 2.5px 5px;
 border-radius: 10px; 
 }
 
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
 
 h1, h2 {
-  font-size: 25px;
   padding: 5px;
   color: rgb(40, 140, 206);
   font-family: 'Cooper Black', 'Georgia', serif;
@@ -154,9 +160,11 @@ h1, h2 {
 
 #header-img {
   height: auto;
-  max-height: 200px;
+  min-height: 150px;
+  max-height: 300px;
   width: auto;
-  margin: -30px;
+  margin-top: -70px;
+  margin-bottom: -80px;
 }
 
 
@@ -195,9 +203,9 @@ section {
 
 #products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 20px;
-  width: 90%;
+  width: 100%;
 }
 
 
